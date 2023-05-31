@@ -8,6 +8,6 @@ services:
     volumes:
            - /u01/docker-opensips248-tel/socket:/var/run/opensips
            - /etc/localtime:/etc/localtime:ro
-    command: /usr/local/bin/opensips_exporter -protocol mi_datagram -socket /var/run/opensips/opensips.sock -addr 192.168.2.192:9737
+    command: /usr/local/bin/opensips_exporter -protocol mi_datagram -socket /var/run/opensips/opensips.sock -addr 192.168.2.127:9737
     network_mode: "host"
 
